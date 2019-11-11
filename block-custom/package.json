@@ -1,0 +1,32 @@
+{
+  "name": "block-custom",
+  "version": "1.0.0",
+  "description": "Gutenberg custom block Sample!",
+  "main": "blocks.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:KeitaOtaru1983/gutensample.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --hot --inline"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.7.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^7.1.5",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
