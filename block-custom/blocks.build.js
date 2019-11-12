@@ -94,7 +94,18 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./title/block.js */ \"./title/block.js\");\n\n__webpack_require__(/*! ./txt-title-brown/block.js */ \"./txt-title-brown/block.js\");\n\n//# sourceURL=webpack:///./blocks.js?");
+eval("\n\n__webpack_require__(/*! ./title/block.js */ \"./title/block.js\");\n\n__webpack_require__(/*! ./txt-title-brown/block.js */ \"./txt-title-brown/block.js\");\n\n__webpack_require__(/*! ./scss/style.scss */ \"./scss/style.scss\");\n\n//# sourceURL=webpack:///./blocks.js?");
+
+/***/ }),
+
+/***/ "./scss/style.scss":
+/*!*************************!*\
+  !*** ./scss/style.scss ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./scss/style.scss?");
 
 /***/ }),
 
@@ -118,7 +129,7 @@ eval("\n\n/* h2画像用ブロック */\nvar registerBlockType = wp.blocks.regis
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n/* z-tree.jpの中見出し ブラウン */\nvar registerBlockType = wp.blocks.registerBlockType;\nvar RichText = wp.editor.RichText;\nvar blockStyle = {\n  borderLeft: '4px solid #c48214',\n  padding: '10px 20px',\n  marginBottom: '30px',\n  fontSize: '18px'\n};\nregisterBlockType('block-custom/txt-title-brown', {\n  title: '茶色の中見出し',\n  icon: 'index-card',\n  category: 'common',\n  content: {\n    source: 'children',\n    selector: 'p'\n  },\n  edit: function edit(props) {\n    return wp.element.createElement(\"div\", {\n      style: blockStyle\n    }, wp.element.createElement(RichText, {\n      tagName: 'p',\n      className: props.className,\n      onChange: function onChange(content) {\n        return props.setAttributes({\n          content: content\n        });\n      },\n      value: props.attributes.content\n    }));\n  },\n  save: function save(props) {\n    return wp.element.createElement(\"h3\", {\n      style: blockStyle\n    }, wp.element.createElement(RichText.Content, {\n      value: props.attributes.content\n    }));\n  }\n});\n\n//# sourceURL=webpack:///./txt-title-brown/block.js?");
+eval("\n\n/* z-tree.jpの中見出し ブラウン */\nvar registerBlockType = wp.blocks.registerBlockType;\nvar RichText = wp.editor.RichText;\nregisterBlockType('block-custom/txt-title-brown', {\n  title: '茶色の中見出し',\n  icon: 'index-card',\n  category: 'common',\n  content: {\n    source: 'children',\n    selector: 'p'\n  },\n  edit: function edit(props) {\n    return wp.element.createElement(\"div\", {\n      \"class\": 'txt-title-brown'\n    }, wp.element.createElement(RichText, {\n      onChange: function onChange(content) {\n        return props.setAttributes({\n          content: content\n        });\n      },\n      value: props.attributes.content\n    }));\n  },\n  save: function save(props) {\n    return wp.element.createElement(\"div\", null, props.attributes.content);\n  }\n});\n\n//# sourceURL=webpack:///./txt-title-brown/block.js?");
 
 /***/ })
 

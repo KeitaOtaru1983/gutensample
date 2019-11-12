@@ -1,11 +1,7 @@
 /* z-tree.jpの中見出し ブラウン */
 
-
 const { registerBlockType } = wp.blocks;
-const {RichText} = wp.editor;
-const blockStyle = {borderLeft: '4px solid #c48214', padding: '10px 20px', marginBottom: '30px', fontSize: '18px',};
-
-
+const RichText = wp.editor.RichText;
 
 
 registerBlockType( 'block-custom/txt-title-brown', {
@@ -19,10 +15,8 @@ registerBlockType( 'block-custom/txt-title-brown', {
     
    edit: function( props ) {
         return (
-            <div style={ blockStyle }>
+            <div class='txt-title-brown'>
                 <RichText
-                    tagName='p'
-                    className={ props.className }
                     onChange={ (content) => props.setAttributes({content}) }
                     value={ props.attributes.content }
                 />
@@ -30,12 +24,12 @@ registerBlockType( 'block-custom/txt-title-brown', {
         );
     },
     save: function( props ) {
+        
         return (
-            <h3 style={ blockStyle }>
-                <RichText.Content
-                   value={ props.attributes.content }
-                />
-            </h3>
+            <div>
+                {props.attributes.content}
+                
+            </div>
         );
     },
 } );
