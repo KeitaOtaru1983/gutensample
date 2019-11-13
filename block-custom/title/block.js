@@ -4,7 +4,7 @@ const { registerBlockType } = wp.blocks;
 const { MediaUpload } = wp.editor;
 const { Button } = wp.components;
  
-registerBlockType( 'block-custom/title', {
+registerBlockType( 'my-custom/title', {
     title: '大見出し画像',
     icon: 'index-card',
     category: 'common',
