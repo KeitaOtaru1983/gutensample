@@ -17,5 +17,5 @@ Put [block-custom] in the WordPress "plugins" folder and activate it on the mana
 
 * 11/12 update: css is read externally. When I try to edit a currently saved block, I get the error "This block contains unexpected or invalid content". Currently under investigation.
 
-※11/13追記
+* 11/13 update:
 The error has been corrected. Also, because the block name is long, it was modified to “title-brown”.
