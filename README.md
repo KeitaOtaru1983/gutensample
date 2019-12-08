@@ -1,21 +1,21 @@
 # newRead
-Gutenbergのサンプルブロック
+Gutenberg sample block
 
 
 ## Description
 
-私がGutenbergのカスタムブロックの勉強で作成したブロックをプラグイン化したものです
+It is a plug-in version of the block I created by studying custom blocks in Gutenberg.
 
 ## Usage
-便利に使えるものはありませんが、カスタムブロック開発の参考になればと思っています。現在画像を見出しにするブロックとhttps://z-tree.jp/の茶色の中見出しを作りました。
+There is nothing convenient to use, but I hope it will be useful for custom block development. I made a block that uses the current image as a headline and a brown medium heading at https://z-tree.jp/.
 
 ## Install
 
-[block-custom」をWordPressの「plugins」フォルダに入れて、管理画面で有効化してください。「茶色の中見出し」、「大見出し画像」のブロックができます。
+Put [block-custom] in the WordPress "plugins" folder and activate it on the management screen. “Brown medium headline” and “Large headline image” blocks can be created.
 
 ### Update
 
-※11/12追記：cssを外部で読み込むようにしました。現状保存したブロックを編集しようとしたとき「このブロックには、想定されていないか無効なコンテンツが含まれています」というエラーが出ます。現在調査中です。
+* 11/12 update: css is read externally. When I try to edit a currently saved block, I get the error "This block contains unexpected or invalid content". Currently under investigation.
 
-※11/13追記
-エラーを修正しました。また、ブロック名が長いので「title-brown」に修正しました。
+* 11/13 update:
+The error has been corrected. Also, because the block name is long, it was modified to “title-brown”.
